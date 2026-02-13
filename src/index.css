@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FFFBEB;
+  /* Very pale yellow for subtle contrast */
+  --csk-yellow: #FDB913;
+  --csk-orange: #F26522;
+  --accent-gradient: linear-gradient(135deg, #FDB913 0%, #F26522 100%);
+  --text-dark: #1E1E1E;
+  --text-muted: #64748B;
+  --border-light: #FDE68A;
+  --glass-white: rgba(255, 255, 255, 0.9);
+  --shadow-warm: 0 20px 40px rgba(242, 101, 34, 0.1);
+
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+section {
+  padding: 150px 0;
+}
+
+/* Sharp Architectural Borders */
+.thin-border {
+  border: 1px solid var(--border-light);
+}
+
+.accent-border {
+  border: 1px solid var(--csk-yellow);
+}
+
+/* Custom Scrollbar - Warm Theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--csk-yellow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--csk-orange);
+}
+
+/* Figma Utility Classes */
+.floating-dock {
+  background: var(--glass-white);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.massive-title {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: var(--text-dark);
+}
+
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button Reset */
+button,
+.btn {
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--accent-gradient);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+}
+
+.btn-primary:hover {
+  box-shadow: var(--shadow-warm);
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Reveal Slide - Warm Version */
+.reveal-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-gradient);
+  transform: translateX(-101%);
+}
+
+.reveal-block.active::after {
+  animation: reveal-slide 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes reveal-slide {
+  0% {
+    transform: translateX(-101%);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+.font-cursive {
+  font-family: 'Quintessential', cursive;
+}
