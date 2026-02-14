@@ -12,7 +12,7 @@ export const projects = [
     live: "https://drive.google.com/file/d/1hd_e4luqY2GH-RYHfIANqdPeaQAlNzUi/view?usp=sharing",
     github: "https://github.com/THE-Amrit-mahto-05/Smart-City-Management-Platform.git",
     uml: "https://example.com/uml-smart-city",
-    tags: ["React Native", "Express", "Node.js", "MongoDB", "Charts", "PostgreSQL", "Tailwind CSS"]
+    tags: ["React Native", "Express", "Node.js", "MongoDB", "Charts", "PostgreSQL", "Tailwind CSS","API"]
   },
   {
     title: "Notes Sharing Platform",
