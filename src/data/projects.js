@@ -30,7 +30,7 @@ export const projects = [
     live: "https://e-detection.vercel.app/",
     github: "https://app.roboflow.com/electronic-waste-ni0o1/e-waste-data/models",
     uml: "https://example.com/uml-e-detection",
-    tags: ["Next.js", "OpenCV", "MongoDB", "Roboflow"]
+    tags: ["OpenCV", "MongoDB", "Roboflow"]
   },
   {
     title: "AI Interview Platform",
@@ -48,7 +48,7 @@ export const projects = [
     live: "https://github.com/THE-Amrit-mahto-05/Zipf-s-Law-Project/blob/main/Zipf's_Law_Project.ipynb",
     github: "https://github.com/THE-Amrit-mahto-05/Zipf-s-Law-Project/blob/main/Zipf's_Law_Project.ipynb",
     uml: "https://example.com/uml-analysis",
-    tags: ["React", "Gemini API", "Vapi AI", "Web Speech API", "Prisma ORM", "JWT", "Supabase"]
+    tags: ["google collab","pandas","numpy","matplotlib"]
   },
 
 ];
