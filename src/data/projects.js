@@ -11,7 +11,7 @@ export const projects = [
     images: [ss],
     live: "https://drive.google.com/file/d/1hd_e4luqY2GH-RYHfIANqdPeaQAlNzUi/view?usp=sharing",
     github: "https://github.com/THE-Amrit-mahto-05/Smart-City-Management-Platform.git",
-    uml: "https://example.com/uml-smart-city",
+    uml: "adding",
     tags: ["React Native", "Express", "Node.js", "MongoDB", "Charts", "PostgreSQL", "Tailwind CSS","API"]
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     images: [note],
     live: "https://notes-shaaring-platform.vercel.app/",
     github: "https://github.com/THE-Amrit-mahto-05/NotesShaaring-Platform.git",
-    uml: "https://example.com/uml-notes",
+    uml: "adding",
     tags: ["React", "Node.js", "Tailwind", "Cloudinary", "MongoDB", "OAuth"]
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     images: [e],
     live: "https://e-detection.vercel.app/",
     github: "https://app.roboflow.com/electronic-waste-ni0o1/e-waste-data/models",
-    uml: "https://example.com/uml-e-detection",
+    uml: "adding",
     tags: ["OpenCV", "MongoDB", "Roboflow"]
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
     images: [interview],
     live: "https://jaago-guru-ke77.vercel.app/",
     github: "https://github.com/THE-Amrit-mahto-05/InterviewMate.git",
-    uml: "https://example.com/uml-ai-interview",
+    uml: "adding",
     tags: ["React", "Gemini API", "Vapi AI", "Web Speech API", "Prisma ORM", "JWT", "Supabase"]
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
     images: [Analy],
     live: "https://github.com/THE-Amrit-mahto-05/Zipf-s-Law-Project/blob/main/Zipf's_Law_Project.ipynb",
     github: "https://github.com/THE-Amrit-mahto-05/Zipf-s-Law-Project/blob/main/Zipf's_Law_Project.ipynb",
-    uml: "https://example.com/uml-analysis",
+    uml: "adding",
     tags: ["google collab","pandas","numpy","matplotlib"]
   },
 
