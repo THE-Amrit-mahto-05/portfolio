@@ -21,7 +21,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="Hero" className="min-h-screen flex flex-col items-center justify-center relative bg-white px-6 py-20">
+    <section id="Hero" className="min-h-screen flex flex-col items-center justify-center relative bg-white px-6 pt-12 pb-20">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center flex-grow">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
