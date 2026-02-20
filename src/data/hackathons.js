@@ -3,7 +3,7 @@ export const hackathons = [
     name: "Bharatiya Antariksh Hackathon 2025",
     role: "Round 2 Qualifier",
     desc: "Simulation/Modelling of Forest Fire Spread using AI/ML techniques",
-    live: "https://forestfire-0.streamlit.app/",
+    live: "https://forestfiregit-7wf8occcmzxuycgwxh5hyx.streamlit.app/",
     certificate: "https://certificate.hack2skill.com/user/isrobah25/2025H2S06BAH25-P01220"
   },
   {
