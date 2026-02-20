@@ -18,7 +18,6 @@ const AzureBackground = () => {
         window.addEventListener("resize", resize);
         resize();
 
-        // Gradient "Clouds"
         const clouds = Array.from({ length: 5 }, () => ({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,

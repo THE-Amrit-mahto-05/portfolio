@@ -92,12 +92,12 @@ const SkillCard = ({ icon: Icon, name, index }) => (
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.3, delay: index * 0.01 }}
     viewport={{ once: true }}
-    className="group bg-[#FFFBEB] border border-[#FDB913]/10 p-2 flex flex-col items-center gap-1.5 hover:border-[#F26522]/30 transition-all duration-300 relative overflow-hidden"
+    className="group bg-[#FFFBEB] border border-[#FDB913]/10 p-3 flex flex-col items-center gap-2 hover:border-[#F26522]/30 transition-all duration-300 relative overflow-hidden"
   >
-    <div className="text-xl text-[#FDB913] group-hover:text-[#F26522] transition-colors duration-300 group-hover:scale-110">
+    <div className="text-2xl text-[#FDB913] group-hover:text-[#F26522] transition-colors duration-300 group-hover:scale-110">
       <Icon />
     </div>
-    <span className="text-[8px] font-bold text-[#1E1E1E] uppercase tracking-tighter text-center leading-tight">
+    <span className="text-[9px] font-bold text-[#1E1E1E] uppercase tracking-tighter text-center leading-tight">
       {name}
     </span>
   </motion.div>

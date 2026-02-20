@@ -21,7 +21,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="Hero" className="min-h-screen flex flex-col items-center justify-center relative bg-white px-6 pt-12 pb-20">
+    <section id="Hero" className="min-h-screen flex flex-col items-center justify-center relative bg-white px-6 pt-20 pb-10">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center flex-grow">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -65,7 +65,7 @@ const Hero = () => {
               <motion.img
                 src={Amri}
                 alt="Amrit Kumar Mahto"
-                className="w-full max-w-[450px] transition-all duration-700"
+                className="w-full max-w-[380px] transition-all duration-700"
               />
               <motion.div
                 initial={{ x: "-100%" }}
@@ -78,13 +78,11 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* Social/Coding Icons Styled Box */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="mt-12 bg-[#FFFBEB]/50 backdrop-blur-sm border border-[#FDB913]/20 py-2 px-6 md:py-3 md:px-8 rounded-2xl shadow-sm flex flex-wrap justify-center gap-6 md:gap-10"
+        className="mt-2 bg-[#FFFBEB]/50 backdrop-blur-sm border border-[#FDB913]/20 py-2 px-6 md:py-3 md:px-8 rounded-2xl shadow-sm flex flex-wrap justify-center gap-6 md:gap-10"
       >
         {socialIcons.map((item, index) => (
           <a

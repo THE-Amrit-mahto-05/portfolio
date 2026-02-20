@@ -37,7 +37,6 @@ const FluxBackground = () => {
         window.addEventListener('click', handleClick);
         resize();
 
-        // Fluid Blobs
         const blobs = Array.from({ length: 8 }, () => ({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
@@ -51,7 +50,6 @@ const FluxBackground = () => {
             ctx.fillStyle = '#020617';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw Blobs (Ink effect)
             ctx.filter = 'blur(80px)';
             blobs.forEach(b => {
                 b.x += b.vx;
@@ -77,7 +75,6 @@ const FluxBackground = () => {
             });
             ctx.filter = 'none';
 
-            // Draw Pulses (Bioluminescence)
             pulsesRef.current = pulsesRef.current.filter(p => p.opacity > 0.01);
             pulsesRef.current.forEach(p => {
                 p.r += 15;

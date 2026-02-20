@@ -8,7 +8,14 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Hero");
 
-  const navItems = ["About", "Projects", "Certifications", "Hackathons", "Skills"];
+  const navItems = [
+    { label: "Home", target: "Hero" },
+    { label: "About", target: "About" },
+    { label: "Projects", target: "Projects" },
+    { label: "Certifications", target: "Certifications" },
+    { label: "Hackathons", target: "Hackathons" },
+    { label: "Skills", target: "Skills" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,37 +32,36 @@ const Navbar = () => {
         y: scrolled ? 10 : 20,
         x: "-50%",
         opacity: 1,
-        width: scrolled ? "48%" : "50%",
+        width: scrolled ? "40%" : "42%",
       }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-0 left-1/2 z-50 floating-dock flex items-center justify-between px-8 py-4 h-auto md:h-16 rounded-[4px]"
     >
       <div className="flex justify-between items-center w-full max-w-7xl mx-auto">
-        
 
-        {/* Desktop Nav */}
-        <ul className="hidden md:flex gap-15 items-center">
+
+        <ul className="hidden md:flex gap-8 items-center">
           {navItems.map((item) => (
-            <li key={item} className="relative group">
+            <li key={item.label} className="relative group">
               <Link
-                to={item}
+                to={item.target}
                 smooth={true}
-                duration={500}
+                duration={200}
                 spy={true}
                 activeClass="active"
                 className="cursor-pointer"
-                onSetActive={() => setActiveSection(item)}
+                onClick={() => setActiveSection(item.target)}
+                onSetActive={() => setActiveSection(item.target)}
               >
-                <span className={`text-[11px] uppercase font-bold tracking-[0.1em] transition-colors duration-300 ${activeSection === item ? "text-[#F26522]" : "text-[#1A1A1A]/60 hover:text-[#F26522]"}`}>
-                  {item}
+                <span className={`text-[11px] uppercase font-bold tracking-[0.1em] transition-colors duration-300 ${activeSection === item.target ? "text-[#F26522]" : "text-[#1A1A1A]/60 hover:text-[#F26522]"}`}>
+                  {item.label}
                 </span>
 
-                {/* Underline grow animation */}
                 <motion.div
                   className="absolute -bottom-1 left-1/2 h-[2px] bg-[#FDB913]"
                   initial={{ width: 0, x: "-50%" }}
                   whileHover={{ width: "100%" }}
-                  animate={activeSection === item ? { width: "100%" } : { width: 0 }}
+                  animate={activeSection === item.target ? { width: "100%" } : { width: 0 }}
                   transition={{ duration: 0.3 }}
                 />
               </Link>
@@ -63,7 +69,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Toggle */}
         <div
           className="md:hidden text-2xl text-[#1A1A1A] cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -72,7 +77,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -83,18 +87,18 @@ const Navbar = () => {
           >
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <Link
-                    to={item}
+                    to={item.target}
                     smooth={true}
-                    duration={500}
+                    duration={200}
                     onClick={() => {
                       setMobileMenuOpen(false);
-                      setActiveSection(item);
+                      setActiveSection(item.target);
                     }}
-                    className={`text-sm font-bold uppercase tracking-widest ${activeSection === item ? "text-[#F26522]" : "text-[#1A1A1A]/60"}`}
+                    className={`text-sm font-bold uppercase tracking-widest ${activeSection === item.target ? "text-[#F26522]" : "text-[#1A1A1A]/60"}`}
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}

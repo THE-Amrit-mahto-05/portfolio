@@ -6,8 +6,6 @@ import SectionWrapper from "./SectionWrapper";
 const Contact = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-      {/* Left Side - Info */}
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -42,8 +40,6 @@ const Contact = () => {
           ))}
         </div>
       </motion.div>
-
-      {/* Right Side - Form */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
