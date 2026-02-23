@@ -4,6 +4,7 @@ import note from "../assets/projects/note.png"
 import e from "../assets/projects/e.png"
 import Analy from "../assets/projects/Analy.png"
 import interview from "../assets/projects/interview.png"
+import Dash from "../assets/projects/Dash.png"
 export const projects = [
   {
     title: "Smart City Management",
@@ -49,6 +50,15 @@ export const projects = [
     github: "https://github.com/THE-Amrit-mahto-05/Zipf-s-Law-Project/blob/main/Zipf's_Law_Project.ipynb",
     uml: "adding",
     tags: ["google collab","pandas","numpy","matplotlib"]
+  },
+  {
+    title: "Working with Dataset",
+    desc: "Conducted word frequency and Zipf’s Law analysis to extract key textual patterns and insights from datasets",
+    images: [Dash],
+    live: "https://docs.google.com/spreadsheets/d/1RuYO393t9wo8vMFglOXTkOm4fCzEzVtc4vM3yRRQ8oU/edit?usp=sharing",
+    github: "https://github.com/THE-Amrit-mahto-05/Zipf-s-Law-Project/blob/main/Zipf's_Law_Project.ipynb",
+    uml: "adding",
+    tags: ["google sheet","Charts","pivot table"]
   },
 
 ];
