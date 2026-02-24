@@ -88,16 +88,26 @@ const skillCategories = [
 
 const SkillCard = ({ icon: Icon, name, index }) => (
   <motion.div
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.3, delay: index * 0.01 }}
-    viewport={{ once: true }}
-    className="group bg-[#FFFBEB] border border-[#FDB913]/10 p-3 flex flex-col items-center gap-2 hover:border-[#F26522]/30 transition-all duration-300 relative overflow-hidden"
+    initial={{ opacity: 0, scale: 0.8, y: 20 }}
+    whileInView={{ opacity: 1, scale: 1, y: 0 }}
+    transition={{
+      type: "spring",
+      stiffness: 100,
+      damping: 10,
+      delay: (index % 5) * 0.05
+    }}
+    whileHover={{
+      y: -5,
+      transition: { duration: 0.2 }
+    }}
+    viewport={{ once: true, margin: "-50px" }}
+    className="group bg-white border border-[#FDB913]/10 p-4 flex flex-col items-center justify-center gap-2 hover:border-[#F26522]/40 transition-all duration-300 relative overflow-hidden rounded-xl shadow-sm hover:shadow-md"
   >
-    <div className="text-2xl text-[#FDB913] group-hover:text-[#F26522] transition-colors duration-300 group-hover:scale-110">
+    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#FDB913] to-[#F26522] opacity-0 group-hover:opacity-100 transition-opacity" />
+    <div className="text-3xl text-[#FDB913] group-hover:text-[#F26522] transition-colors duration-300 group-hover:scale-110">
       <Icon />
     </div>
-    <span className="text-[9px] font-bold text-[#1E1E1E] uppercase tracking-tighter text-center leading-tight">
+    <span className="text-[10px] font-black text-[#1E1E1E]/80 uppercase tracking-tighter text-center leading-tight">
       {name}
     </span>
   </motion.div>
