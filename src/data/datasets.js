@@ -12,7 +12,7 @@ export const datasets = [
     },
     {
         title: "Working with Dataset",
-        desc: "Conducted word frequency and Zipf’s Law analysis to extract key textual patterns and insights from datasets",
+        desc: "how discount affecting sales volume at different scenerio",
         images: [Dash],
         live: "https://docs.google.com/spreadsheets/d/1RuYO393t9wo8vMFglOXTkOm4fCzEzVtc4vM3yRRQ8oU/edit?usp=sharing",
         tags: ["google sheet", "Charts", "pivot table"]
