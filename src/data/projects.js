@@ -3,6 +3,7 @@ import ss from "../assets/projects/ss.png";
 import note from "../assets/projects/note.png"
 import e from "../assets/projects/e.png"
 import interview from "../assets/projects/interview.png"
+import inter from "../assets/projects/inter.png"
 
 export const projects = [
   {
@@ -40,5 +41,14 @@ export const projects = [
     github: "https://github.com/THE-Amrit-mahto-05/InterviewMate.git",
     uml: "adding",
     tags: ["React", "Gemini API", "Vapi AI", "Web Speech API", "Prisma ORM", "JWT", "Supabase"]
+  },
+  {
+    title: "Tars AI - Chat Application",
+    desc: "Whatapp-like chat application with an integrated AI assistant for enhanced user experience",
+    images: [inter],
+    live: "https://tars-ai-five.vercel.app/",
+    github: "https://github.com/THE-Amrit-mahto-05/Tars-AI-Chat-Application.git",
+    uml: "adding",
+    tags: ["Next.js", "Tailwind CSS", "Clerk", "Convex","Groq"]
   },
 ];
