@@ -3,7 +3,7 @@ import ss from "../assets/projects/ss.png";
 import note from "../assets/projects/note.png"
 import e from "../assets/projects/e.png"
 import interview from "../assets/projects/interview.png"
-import inter from "../assets/projects/inter.png"
+import inter from "../assets/projects/Inter.png";
 
 export const projects = [
   {
