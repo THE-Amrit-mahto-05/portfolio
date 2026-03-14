@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { projects } from "../data/projects";
-import { FaGithub, FaExternalLinkAlt, FaProjectDiagram } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ project, index }) => {
   return (
@@ -22,11 +22,6 @@ const ProjectCard = ({ project, index }) => {
           <a href={project.github} target="_blank" rel="noreferrer" className="p-4 bg-white text-[#F26522] rounded-full hover:scale-125 transition-transform shadow-lg">
             <FaGithub size={24} />
           </a>
-          {project.uml && (
-            <a href={project.uml} target="_blank" rel="noreferrer" className="p-4 bg-white text-[#F26522] rounded-full hover:scale-125 transition-transform shadow-lg" title="UML Diagram">
-              <FaProjectDiagram size={24} />
-            </a>
-          )}
           <a href={project.link || project.live} target="_blank" rel="noreferrer" className="p-4 bg-white text-[#F26522] rounded-full hover:scale-125 transition-transform shadow-lg">
             <FaExternalLinkAlt size={24} />
           </a>
