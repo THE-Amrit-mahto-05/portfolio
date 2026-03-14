@@ -4,6 +4,7 @@ import note from "../assets/projects/note.png"
 import e from "../assets/projects/e.png"
 import interview from "../assets/projects/interview.png"
 import inter from "../assets/projects/Inter.png";
+import forest from "../assets/projects/forest.png";
 
 export const projects = [
   {
@@ -39,11 +40,19 @@ export const projects = [
     tags: ["React", "Gemini API", "Vapi AI", "Web Speech API", "Prisma ORM", "JWT", "Supabase"]
   },
   {
-    title: "Tars AI - Chat Application",
+    title: "Tars: AI Assistant ",
     desc: "Whatapp-like chat application with an integrated AI assistant for enhanced user experience",
     images: [inter],
     live: "https://tars-ai-five.vercel.app/",
     github: "https://github.com/THE-Amrit-mahto-05/Tars-AI-Chat-Application.git",
-    tags: ["Next.js", "Tailwind CSS", "Clerk", "Convex","Groq"]
+    tags: ["Next.js", "Tailwind CSS", "Clerk", "Convex", "Groq"]
+  },
+  {
+    title: "Agni-chakshu: Simulator (AI voice assistant)",
+    desc: "Forest Fire Simulator , on the basis of windspeed, terrain topology,fuel load",
+    images: [forest],
+    live: "https://forestfiregit-7wf8occcmzxuycgwxh5hyx.streamlit.app/",
+    github: "https://github.com/THE-Amrit-mahto-05/ForestFire.git",
+    tags: ["Deep Learning (U-Net)", "Tailwind CSS", "Data Pipeline", "Deepgram", "Streamlit", "Python"]
   },
 ];
